@@ -29,13 +29,25 @@ body {
 
 }
 
+
+
 .btn {
-  margin: 25px;
+  margin: 15px;
   display: inline-block;
   height: 100px;
   width: 100px;
   border: 10px solid black;
   border-radius: 20%;
+}
+
+@media (max-width:990px) {
+  .btn{
+    margin: 15px;
+    display: inline-block;
+    height: 70px;
+    width: 70px;
+    border: 10px solid black;
+    border-radius: 20%;}
 }
 
 .game-over {
