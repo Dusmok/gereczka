@@ -116,7 +116,7 @@ $('#dodatek').addClass('hidden')
         checkAnswer(userClickedPattern.length - 1);
       });
     })
-    $('h1').text('PRZEGRAŁEŚ!').css('color', 'white').css('font-size','1.5rem')
+    $('h1').text('PRZEGRANA!').css('color', 'white').css('font-size','1.5rem')
     $('body').css('background', 'red')
     // $('body').on('keydown', (function () {
     //
