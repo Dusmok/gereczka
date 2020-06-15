@@ -43,7 +43,7 @@ function nextSequence() {
   $("." + randomChosenColor).fadeToggle(100).fadeToggle(100)
 
   level++
-  $('h1').text("Level " + level).css('color', '#FEF2BF')
+  $('h1').text("Level " + level).css('color', '#FEF2BF').css('font-size','1.5rem')
 }
 
 
@@ -116,7 +116,7 @@ $('#dodatek').addClass('hidden')
         checkAnswer(userClickedPattern.length - 1);
       });
     })
-    $('h1').text('PRZEGRAŁEŚ!').css('color', 'white').css('font-size','1rem')
+    $('h1').text('PRZEGRAŁEŚ!').css('color', 'white').css('font-size','1.5rem')
     $('body').css('background', 'red')
     // $('body').on('keydown', (function () {
     //
