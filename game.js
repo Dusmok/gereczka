@@ -86,9 +86,28 @@ function checkAnswer(currentLevel) {
 
 
     if (gamePattern.length === userClickedPattern.length) {
+
+$('.btn').off('click'),
+
       setTimeout(function() {
         nextSequence()
-      }, 1000)
+      }, 1000 )
+
+      setTimeout(function() {
+        $('.btn').on('click', function() {
+          var userClickedColor = this.id
+          userClickedPattern.push(userClickedColor);
+          playSound(userClickedColor)
+          $(this).addClass('pressed');
+          setTimeout(function() {
+            $('.btn').removeClass('pressed');
+          }, 100)
+
+          checkAnswer(userClickedPattern.length - 1);
+        });
+      }, 1000 )
+
+
     }
 
 
